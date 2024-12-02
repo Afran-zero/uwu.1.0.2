@@ -1,0 +1,557 @@
+/* Body Styles - Sophisticated Background */
+body {
+    background-color: #272727; /* Dark background for a sleek look */
+    background-image: linear-gradient(145deg, #1a1a1a, #242424); /* Subtle gradient */
+    color: #b999d8; /* White text for readability */
+    margin: 0;
+    font-family: 'Concert One', sans-serif; /* Professional and stylish font */
+}
+
+/* Center the form box */
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Box Styles */
+.bg-white {
+    background-color: #2b2b2b; /* Darker background */
+    border-radius: 0px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 25px rgba(138, 43, 226, 0.5); /* Purple glow */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bg-white:hover {
+    transform: translateY(-10px); /* Subtle lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(138, 43, 226, 0.8); /* Stronger glow */
+}
+
+/* Form Title and Heading Styles */
+.welcome-heading, .form-title {
+    color: #b29ddc; /* Light purple for elegance */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input Field Styles */
+.form-control {
+    background-color: #1e1e1e; /* Dark input background */
+    border: 2px solid #6a0dad; /* Purple border */
+    border-radius: 8px;
+    padding: 10px;
+    color: #825886; /* White text for contrast */
+    box-shadow: 0 0 8px rgba(106, 13, 173, 0.4); /* Subtle glow */
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #8a2be2; /* Brighter purple on focus */
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.8); /* Stronger glow */
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #6a0dad; /* Purple background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(138, 43, 226, 0.5); /* Glow effect */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #8a2be2; /* Brighter purple on hover */
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+/* Hyperlink Styles */
+.signup-link, .forgot-link {
+    color: #8a2be2; /* Purple text */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.signup-link:hover, .forgot-link:hover {
+    color: #ffffff; /* Change to white on hover */
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); /* Glow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bg-white {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .welcome-heading, .form-title {
+        font-size: 1.5rem;
+    }
+
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* Navbar Brand Styles */
+.navbar-brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Logo Text */
+.logo-text {
+    font-family: 'Concert One', sans-serif; /* Stylish font */
+    font-size: 2rem; /* Large font size for prominence */
+    color: #923ece; /* Purple color */
+    
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Spaced letters for modern look */
+    text-shadow: 0 4px 8px rgba(67, 0, 116, 0.6); /* Glowing effect */
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.logo-text:hover {
+    color: #ffffff; /* Change color on hover */
+    text-shadow: 0 6px 12px rgba(138, 43, 226, 0.8); /* Stronger glow on hover */
+}
+
+
+/* Search Input Styles */
+.search-input {
+    width: 100%; /* Make the input take up full space */
+    max-width: 500px; /* Limit the width for responsiveness */
+    border-radius: 8px; /* Add subtle rounding */
+    border: 2px solid #6a0dad; /* Purple border for styling */
+    padding: 10px 15px; /* Adjust padding for better UX */
+    font-size: 1rem; /* Comfortable font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #8a2be2; /* Brighter border on focus */
+    box-shadow: 0 0 8px rgba(138, 43, 226, 0.5); /* Glowing effect */
+    outline: none;
+}
+
+#search_result {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#search_result .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Button Close Alignment */
+.btn-close {
+    margin-top: -10px;
+    margin-right: -10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Dark theme for the wall page */
+.wall-container {
+    background-color: #1c1c1c; /* Dark gray */
+    color: #e6e6e6; /* Light gray text for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Card background */
+.wall-container .card {
+    background-color: #2a2a2a; /* Slightly lighter dark for cards */
+    color: #e6e6e6;
+    border: none; /* Remove default borders for a cleaner look */
+}
+
+/* Comment input and buttons */
+.wall-container .comment-input,
+.wall-container .add-comment {
+    background-color: #3a3a3a; /* Darker gray for input fields */
+    color: #e6e6e6;
+    border-color: #555; /* Border matching theme */
+}
+
+.wall-container .add-comment:hover {
+    background-color: #4a4a4a; /* Slightly lighter hover effect */
+}
+
+/* Dropdown menus */
+.wall-container .dropdown-menu {
+    background-color: #2a2a2a;
+    color: #e6e6e6;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Links and text styles */
+.wall-container a {
+    color: #ff7b72; /* A soft accent color */
+    text-decoration: none;
+}
+
+.wall-container a:hover {
+    text-decoration: underline;
+}
+
+/* Suggestions block */
+.wall-container .suggestions {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 10px;
+    color: #e6e6e6;
+}
+img.rounded-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img.rounded-circle:hover {
+    transform: scale(1.1); /* Makes the image slightly larger */
+    box-shadow: 0 4px 8px rgba(241, 110, 213, 0.815); /* Adds a shadow effect */
+}
+.logo-text {
+    font-size: 2 rem; /* Increase the font size */
+    color: #fff;
+    font-weight: bold;
+}
+.navbar-nav .nav-link i {
+    font-size: 1.5rem; /* Increases icon size */
+}
+
+.navbar-nav .nav-link img {
+    height: 40px; /* Adjust image size */
+    width: 40px;
+}
+/* Modal background */
+.modal-content {
+    background: linear-gradient(135deg, #2d2d3a, #4a2e70);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.modal-header h5 {
+    font-weight: bold;
+    color: #e0d7ff;
+}
+
+.modal-footer {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-close {
+    background-color: #e0d7ff;
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* Custom inputs */
+.custom-input {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.custom-input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-color: #6f42c1;
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+}
+
+/* Custom button */
+.custom-btn {
+    background-color: #6f42c1;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #8a5de8;
+}
+
+/* Notification styles */
+.offcanvas {
+    background: linear-gradient(135deg, #2d2d3a, #4a2e70);
+    color: #fff;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-body {
+    font-size: 14px;
+}
+
+.offcanvas-body .d-flex {
+    margin-bottom: 1rem;
+}
+
+.offcanvas-body img {
+    border: 2px solid #e0d7ff;
+    border-radius: 50%;
+}
+/* Custom file label */
+.custom-file-label {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0d7ff;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #6f42c1;
+}
+
+/* Hidden file input */
+.visually-hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Adjust file label on focus */
+#select_post_img:focus + .custom-file-label {
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+    border-color: #6f42c1;
+}
+/* Adjust Offcanvas Header Spacing */
+.offcanvas-header {
+    padding: 15px 20px; /* Adds sufficient spacing */
+}
+
+/* Close Button Alignment */
+.offcanvas-header .btn-close {
+    margin: 0; /* Ensure no extra margins */
+    padding: 0;
+}
+
+/* Offcanvas Body Text Styling */
+.offcanvas-body {
+    background: #121212; /* Dark background for the sidebar */
+    color: #ffffff; /* White text */
+}
+
+/* Text Styling for Notifications */
+.offcanvas-body a {
+    color: #ffffff; /* White text for links */
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* Soft white shadow */
+}
+
+.offcanvas-body p {
+    color: rgba(255, 255, 255, 0.7); /* Slightly muted white for description */
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3); /* Softer shadow */
+}
+
+/* Timeago and Badge Styling */
+.offcanvas-body .timeago {
+    color: rgba(255, 255, 255, 0.5); /* Subtle white for timestamps */
+}
+
+.offcanvas-body .badge {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+/* Notification Divider Styling */
+.offcanvas-body .border-bottom {
+    border-color: rgba(255, 255, 255, 0.1); /* Light border for separation */
+}
+
+/* Profile Picture Styling */
+.offcanvas-body img {
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Add border around profile pics */
+}
+
+/* Primary Indicator for Unread Notifications */
+.offcanvas-body .bg-primary {
+    background-color: #6f42c1 !important; /* Purple hue */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+}
+/* General Sidebar Styling */
+.offcanvas-header {
+    padding: 15px 20px;
+}
+
+.offcanvas-header .btn-close {
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas-body {
+    background: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    overflow-y: auto; /* Scrollable content */
+}
+
+/* Chat List Styling */
+#chatlist {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Divider at the top */
+    padding: 10px;
+    height: 100%; /* Occupies the full sidebar height */
+}
+
+/* Modal Header Styling */
+.modal-header {
+    background: #1e1e1e; /* Darker background for header */
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle divider */
+}
+
+/* Modal Title and Chat User Info */
+.modal-header .modal-title {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.modal-header img {
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Rounded profile image border */
+}
+
+/* Modal Body Chat Messages */
+.modal-body {
+    background: #2b2b2b; /* Slightly lighter background */
+    color: #ffffff; /* White text */
+    padding: 15px;
+    overflow-y: auto; /* Ensure messages are scrollable */
+}
+
+/* Messages Gap */
+.modal-body.d-flex.gap-2 {
+    gap: 1rem; /* Proper spacing between messages */
+}
+
+/* Chat Input Area */
+.modal-footer {
+    background: #1e1e1e; /* Same as header background */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+#msgsender {
+    display: flex;
+    gap: 5px;
+    background: #2b2b2b; /* Input background matches modal body */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#msginput {
+    flex: 1; /* Input takes maximum space */
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+}
+
+#msginput::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Muted placeholder color */
+}
+
+#sendmsg {
+    background: #4caf50; /* Green send button */
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+#sendmsg:hover {
+    background: #45a045; /* Slightly darker green on hover */
+}
+
+/* Error Message Styling */
+#blerror {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Scrollbar Styling for Messages and Sidebar */
+.offcanvas-body::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb,
+.modal-body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb:hover,
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+/* Styling for the Username in Message Sidebar */
+#chatlist a {
+    color: #800080 !important; /* Purple color */
+    text-decoration: none !important; /* No underline */
+    font-weight: bold !important; /* Optional: makes the username stand out */
+}
+
+#chatlist a:hover {
+    color: #9932CC !important; /* Optional: slightly lighter purple on hover */
+    text-decoration: underline !important; /* Optional: underline on hover for better UX */
+}
+
+/* Remove Glow Effect */
+#chatlist a {
+    text-shadow: none !important; /* Ensures no glow or shadow effect */
+}
