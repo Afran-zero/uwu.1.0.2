@@ -555,3 +555,17 @@ img.rounded-circle:hover {
 #chatlist a {
     text-shadow: none !important; /* Ensures no glow or shadow effect */
 }
+/* Adjusting z-index and positioning */
+.nav-link i {
+    position: relative;
+    z-index: 10; /* Ensure icon is above */
+}
+
+.un-count {
+    position: absolute;
+    top: -5px;  /* Adjust this based on your needs */
+    right: -5px; /* Adjust this based on your needs */
+    font-size: 10px;
+    z-index: 20; /* Ensure badge is on top of icon */
+    pointer-events: auto; /* Ensure badge can be clicked */
+}
